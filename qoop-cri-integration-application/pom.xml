@@ -14,11 +14,6 @@
     <dependencies>
         <dependency>
             <groupId>io.qoop</groupId>
-            <artifactId>qoop-cri-integration-domain</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>io.qoop</groupId>
             <artifactId>qoop-bean-filter-api</artifactId>
         </dependency>
 
@@ -30,6 +25,11 @@
         <dependency>
             <groupId>io.qoop</groupId>
             <artifactId>qoop-validation-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>qoop-cri-integration-domain</artifactId>
         </dependency>
     </dependencies>
 </project>

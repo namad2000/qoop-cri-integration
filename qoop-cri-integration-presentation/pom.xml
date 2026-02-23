@@ -20,6 +20,11 @@
 
         <dependency>
             <groupId>io.qoop</groupId>
+            <artifactId>qoop-mapper-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
             <artifactId>qoop-cri-integration-application</artifactId>
         </dependency>
     </dependencies>

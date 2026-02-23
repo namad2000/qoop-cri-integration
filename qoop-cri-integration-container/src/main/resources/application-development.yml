@@ -1,5 +1,12 @@
-sms:
-  provider: ${SMS_PROVIDER:FARAZ_SMS}
-  baseUrl: ${SMS_BASE_URL:https://edge.ippanel.com/v1/api}
-  fromNumber: ${SMS_FROM_NUMBER:+983000505'}
-  token: ${SMS_TOKEN:YTBkN2I5ZTEtNTNhMC00MDgzLTg5OTAtNWI5YzMzYjQ4ODkxMzBhMjE0MmE0ODllYTI3MDEwNzVmNmFhZWRhZDA4M2Y=}
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//db19.payeshgaran.net:1521/iic_ins_dev
+    username: life_application
+    password: E3z18Cm0ZG
+  jpa:
+    hibernate:
+      show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+        format_sql: true
