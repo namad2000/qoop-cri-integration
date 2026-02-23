@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient(name = "inquiryClient", url = "${leqal.inquiry.url}")
 public interface LegalInquiryClient {
 
-    @PostMapping(value = "/inquiry", consumes = "application/json", produces = "application/json")
+    @PostMapping(value = "/customerinquiryV3", consumes = "application/json", produces = "application/json")
     InquiryResponse sendInquiry(@RequestBody InquiryRequest request);
 }

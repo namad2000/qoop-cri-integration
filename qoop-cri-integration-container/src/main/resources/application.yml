@@ -57,4 +57,4 @@ scan:
 
 leqal:
   inquiry:
-    url: http://esb.iic.local:8041/profile/customerinquiryV3
+    url: http://esb.iic.local:8041/profile
