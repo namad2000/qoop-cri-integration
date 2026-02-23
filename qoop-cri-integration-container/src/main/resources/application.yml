@@ -1,0 +1,38 @@
+server:
+  port: ${SERVER_PORT:1010}
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: cri-integration
+  main:
+    banner-mode: off
+  profiles:
+    active: @spring.profiles.active@
+
+  threads:
+    virtual:
+      enabled: true
+
+discovery:
+  service:
+    host: ${CONSUL_SERVICE_HOST:localhost}
+    port: ${CONSUL_SERVICE_PORT:6060}
+    token: ${CONSUL_SERVICE_TOKEN:24e33f73-3726-6c32-0e62-6f226b18a9ce}
+  self:
+    prefer-ip-address: ${SELF_PREFER_IP_ADDRESS:false}
+    ip-address: ${SELF_IP_ADDRESS:192.168.30.100}
+    port: ${SELF_PORT:${server.port}}
+
+doc:
+  title: Cri Integration
+  version: @project.version@
+  description: Civil Registration Inquiry...
+  server:
+    url: /api
+
+logging:
+  graylog:
+    enabled: false #If false, you will only see logs in the console.
+    host: 172.16.20.50
