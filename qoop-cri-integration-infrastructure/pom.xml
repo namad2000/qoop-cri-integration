@@ -20,6 +20,16 @@
 
         <dependency>
             <groupId>io.qoop</groupId>
+            <artifactId>qoop-data-jpa-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>qoop-data-jpa-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
             <artifactId>qoop-feign</artifactId>
         </dependency>
 

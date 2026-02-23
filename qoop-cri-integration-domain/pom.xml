@@ -11,4 +11,11 @@
     </parent>
 
     <artifactId>qoop-cri-integration-domain</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>qoop-domain</artifactId>
+        </dependency>
+    </dependencies>
 </project>
