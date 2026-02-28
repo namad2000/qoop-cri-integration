@@ -3,7 +3,7 @@ package ir.iran.integration.cri.infrastructure.persistence.repository.jpa.entity
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 @Entity
@@ -28,7 +28,7 @@ public class RealPersonEntity {
 
     @Temporal(TemporalType.DATE)
     @Column(name = "BIRTH_DATE", nullable = false)
-    private Date birthDate;
+    private LocalDate birthDate;
 
     @Column(name = "FK_LOC_BIRTH_LOCATION")
     private Long fkLocBirthLocation;

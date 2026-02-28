@@ -17,5 +17,15 @@
             <groupId>io.qoop</groupId>
             <artifactId>qoop-domain</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>qoop-utils-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
+            <artifactId>qoop-bean-filter-api</artifactId>
+        </dependency>
     </dependencies>
 </project>

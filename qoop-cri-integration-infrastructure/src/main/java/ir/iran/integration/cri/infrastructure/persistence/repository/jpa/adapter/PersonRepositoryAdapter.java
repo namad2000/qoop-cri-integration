@@ -7,19 +7,20 @@ import ir.iran.integration.cri.infrastructure.persistence.repository.jpa.entity.
 import ir.iran.integration.cri.infrastructure.persistence.repository.jpa.mapper.CriProfileMapper;
 import ir.iran.integration.cri.infrastructure.persistence.repository.jpa.mapper.PersonMapper;
 import ir.iran.integration.cri.infrastructure.persistence.repository.jpa.spring.PersonJpaRepository;
-import jdk.jfr.Registered;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Optional;
 
-@Registered
+@Repository
 @RequiredArgsConstructor
 public class PersonRepositoryAdapter implements PersonRepository {
 
     private final PersonJpaRepository repository;
     private final PersonMapper personMapper;
     private final CriProfileMapper criProfilemapper;
+
 
     @Override
     public Person save(Person domain) {
@@ -44,7 +45,7 @@ public class PersonRepositoryAdapter implements PersonRepository {
     }
 
     @Override
-    public Optional<CriProfileView> findByIdentificationNoAndBirthDate(String identificationNo, Date birthDate) {
-        return criProfilemapper.toSource(repository.findByIdentificationNoAndBirthDate(identificationNo, birthDate));
+    public Optional<CriProfileView> findByIdentificationNoAndBirthDate(String identificationNo, LocalDate birthDate) {
+        return criProfilemapper.toTarget(repository.findByIdentificationNoAndBirthDate(identificationNo, birthDate));
     }
 }

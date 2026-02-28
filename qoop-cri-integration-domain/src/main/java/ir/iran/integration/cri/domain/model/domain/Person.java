@@ -3,7 +3,7 @@ package ir.iran.integration.cri.domain.model.domain;
 import ir.iran.integration.cri.domain.enums.DISCRIMINATOR;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 public class Person {
@@ -27,9 +27,9 @@ public class Person {
     private Integer token;
     private Integer isVerified;
     private Long pdmid;
-    private Date verificationDate;
-    private Date deathDate;
-    private Date lastUpdateDate;
+    private LocalDate verificationDate;
+    private LocalDate deathDate;
+    private LocalDate lastUpdateDate;
     private Long fkCrpParent;
     private String subCode;
     private String foreignerId;

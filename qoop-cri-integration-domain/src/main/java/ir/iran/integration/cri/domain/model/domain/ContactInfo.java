@@ -2,6 +2,7 @@ package ir.iran.integration.cri.domain.model.domain;
 
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -17,7 +18,7 @@ public class ContactInfo {
     private String jobTel;
     private String address;
     private String jobAddress;
-    private Date lastUpdateDate;
+    private LocalDate lastUpdateDate;
     private Long fkFlkConfirmationType;
     private Long fkLocCity;
     private Long fkLocProvince;

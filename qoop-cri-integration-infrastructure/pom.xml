@@ -20,6 +20,12 @@
 
         <dependency>
             <groupId>io.qoop</groupId>
+            <artifactId>qoop-utils-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
             <artifactId>qoop-data-jpa-api</artifactId>
         </dependency>
 
@@ -31,11 +37,6 @@
         <dependency>
             <groupId>io.qoop</groupId>
             <artifactId>qoop-feign</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>io.qoop</groupId>
-            <artifactId>qoop-mapper-api</artifactId>
         </dependency>
 
         <dependency>

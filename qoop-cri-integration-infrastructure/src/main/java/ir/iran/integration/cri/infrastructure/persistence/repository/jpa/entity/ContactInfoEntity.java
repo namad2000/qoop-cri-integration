@@ -3,7 +3,7 @@ package ir.iran.integration.cri.infrastructure.persistence.repository.jpa.entity
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 @Entity
@@ -43,7 +43,7 @@ public class ContactInfoEntity {
 
     @Temporal(TemporalType.DATE)
     @Column(name = "LAST_UPDATE_DATE", nullable = false)
-    private Date lastUpdateDate;
+    private LocalDate lastUpdateDate;
 
     @Column(name = "FK_FLK_CONFIRMATION_TYPE")
     private Long fkFlkConfirmationType;

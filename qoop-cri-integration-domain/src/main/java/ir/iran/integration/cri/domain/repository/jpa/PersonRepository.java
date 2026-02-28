@@ -4,9 +4,9 @@ import io.qoop.domain.repository.DomainRepository;
 import ir.iran.integration.cri.domain.model.domain.Person;
 import ir.iran.integration.cri.domain.model.view.CriProfileView;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Optional;
 
 public interface PersonRepository extends DomainRepository<Person, Long> {
-    Optional<CriProfileView> findByIdentificationNoAndBirthDate(String identificationNo, Date birthDate);
+    Optional<CriProfileView> findByIdentificationNoAndBirthDate(String identificationNo, LocalDate birthDate);
 }

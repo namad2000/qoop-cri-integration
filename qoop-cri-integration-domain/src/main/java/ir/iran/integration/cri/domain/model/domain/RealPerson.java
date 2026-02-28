@@ -2,7 +2,7 @@ package ir.iran.integration.cri.domain.model.domain;
 
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 public class RealPerson {
@@ -11,7 +11,7 @@ public class RealPerson {
     private String firstName;
     private String lastName;
     private String fatherName;
-    private Date birthDate;
+    private LocalDate birthDate;
     private Long fkLocBirthLocation;
     private Long fkFlkMaritialState;
     private Long fkFlkMilitaryState;

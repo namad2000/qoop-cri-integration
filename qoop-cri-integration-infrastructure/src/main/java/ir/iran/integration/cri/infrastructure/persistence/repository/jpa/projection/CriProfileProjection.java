@@ -7,23 +7,29 @@ public interface CriProfileProjection {
     // --- Fields from PersonEntity ---
     Long getId();
 
+    Long getLastId();
+
     String getCode();
 
     String getDisplayName();
 
     String getIdentificationNo();
 
-    Long getIdNumber();
+    String getRegisterNo();
 
-    String getIdSeri();
+    Integer getRegisterYear();
 
-    Long getIdSerial();
+    String getInitials();
 
-    String getGender();
+    String getAccountingCode();
 
-    Long getZipCode();
+    String getDisplayNameEn();
 
-    String getShabaCode();
+    String getSubCode();
+
+    String getForeignerId();
+
+    String getToken2();
 
     Long getPdmid();
 
@@ -33,17 +39,7 @@ public interface CriProfileProjection {
 
     Date getDeathDate();
 
-    String getSystemError();
-
-    String getSystemPersianError();
-
-    String getSabtError();
-
-    String getSabtPersianError();
-
-    String getSabtException();
-
-    String getSabtPersianException();
+    Date getLastUpdateDate();
 
     // --- Fields from RealPersonEntity ---
     String getFirstName();
@@ -76,4 +72,8 @@ public interface CriProfileProjection {
     String getAddress();
 
     String getJobAddress();
+
+    String getJobTel();
+
+    String getPostBox();
 }

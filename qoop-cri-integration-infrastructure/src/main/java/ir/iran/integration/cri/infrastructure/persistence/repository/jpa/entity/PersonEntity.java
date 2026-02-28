@@ -4,6 +4,7 @@ import ir.iran.integration.cri.domain.enums.DISCRIMINATOR;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -75,15 +76,15 @@ public class PersonEntity {
 
     @Temporal(TemporalType.DATE)
     @Column(name = "VERIFICATION_DATE")
-    private Date verificationDate;
+    private LocalDate verificationDate;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "DEATH_DATE")
-    private Date deathDate;
+    private LocalDate deathDate;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "LAST_UPDATE_DATE", nullable = false)
-    private Date lastUpdateDate;
+    private LocalDate lastUpdateDate;
 
     @Column(name = "FK_CRP_PARENT")
     private Long fkCrpParent;

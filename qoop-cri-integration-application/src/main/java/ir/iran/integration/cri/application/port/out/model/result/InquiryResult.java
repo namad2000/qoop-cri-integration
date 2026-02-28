@@ -2,19 +2,23 @@ package ir.iran.integration.cri.application.port.out.model.result;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 @Data
+@SuperBuilder
 @NoArgsConstructor
 public class InquiryResult {
     private RootData root;
 
     @Data
+    @SuperBuilder
     @NoArgsConstructor
     public static class RootData {
         private RowData row;
     }
 
     @Data
+    @SuperBuilder
     @NoArgsConstructor
     public static class RowData {
         private String fnameFa;
