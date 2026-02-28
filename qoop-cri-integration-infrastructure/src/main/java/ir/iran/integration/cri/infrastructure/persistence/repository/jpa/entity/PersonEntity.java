@@ -1,4 +1,4 @@
-package ir.iran.integration.cri.infrastructure.persistence.entity;
+package ir.iran.integration.cri.infrastructure.persistence.repository.jpa.entity;
 
 import ir.iran.integration.cri.domain.enums.DISCRIMINATOR;
 import jakarta.persistence.*;
@@ -9,7 +9,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "TB_PERSON", schema = "PAYESH_CRM")
-public class Person {
+public class PersonEntity {
 
     @Id
     @Column(name = "ID")

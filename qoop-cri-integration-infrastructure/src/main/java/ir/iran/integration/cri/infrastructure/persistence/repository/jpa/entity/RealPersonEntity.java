@@ -1,4 +1,4 @@
-package ir.iran.integration.cri.infrastructure.persistence.entity;
+package ir.iran.integration.cri.infrastructure.persistence.repository.jpa.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -8,7 +8,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "TB_REAL_PERSON", schema = "PAYESH_CRM")
-public class RealPerson {
+public class RealPersonEntity {
 
     @Id
     @Column(name = "PK_PRS")

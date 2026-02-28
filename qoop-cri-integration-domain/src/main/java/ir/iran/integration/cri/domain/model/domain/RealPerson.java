@@ -1,4 +1,4 @@
-package ir.iran.integration.cri.domain.model;
+package ir.iran.integration.cri.domain.model.domain;
 
 import lombok.Data;
 

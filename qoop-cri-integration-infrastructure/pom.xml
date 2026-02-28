@@ -35,6 +35,11 @@
 
         <dependency>
             <groupId>io.qoop</groupId>
+            <artifactId>qoop-mapper-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qoop</groupId>
             <artifactId>qoop-mapper-core</artifactId>
         </dependency>
 
