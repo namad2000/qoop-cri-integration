@@ -60,6 +60,7 @@ public class LegalInquiryMapper implements TargetMapper<CriProfileView, InquiryR
                     rowDataTrans.setSabtPersianError(null);
                     rowDataTrans.setSabtException(null);
                     rowDataTrans.setSabtPersianException(null);
+                    rowDataTrans.setInqDesc("کاربر گرامي اطلاعات اين شخص از دیتابیس واکشی و ارسال شده است.");
 
                     return rowDataTrans;
                 })
