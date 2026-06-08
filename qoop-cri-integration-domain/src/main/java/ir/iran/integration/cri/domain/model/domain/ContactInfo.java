@@ -3,11 +3,9 @@ package ir.iran.integration.cri.domain.model.domain;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Data
 public class ContactInfo {
-
     private Long id;
     private String telephone;
     private String cellPhone;
